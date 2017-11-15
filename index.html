@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 5</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Nom : </label><input type="text" name="nom" value="" id="nom" />
+    <label for="prenom">Prénom : </label><input type="text" name="prenom" value="" id="prenom" />
+    <button type="button" name="button" >Envoyer</button>
+  </form>
+  <script>
+    $('#nom').focus(function(){
+      $('#nom').css('border', '1px solid green');
+    });
+    $('#prenom').focus(function(){
+      $('#prenom').css('border', '1px solid green');
+    });
+    $('#nom').blur(function(){
+      $('#nom').css('border', '1px solid red');
+    });
+    $('#prenom').blur(function(){
+      $('#prenom').css('border', '1px solid red');
+    });
+  </script>
+</body>
+</html>
